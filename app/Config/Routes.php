@@ -46,6 +46,9 @@ $routes->group('admin', function($page){
 	$page->group('menu', function($links){
 		$links->add('/', 'Admin\Menu::index');
 		$links->add('tambah', 'Admin\Menu::formInsert');
+		$links->add('edit/(:num)', 'Admin\Menu::formUpdate/$1');
+		$links->add('hapus/(:num)', 'Admin\Menu::hapus/$1');
+		$links->add('aksi', 'Admin\Menu::aksi');
 	});
 });
 
