@@ -43,6 +43,10 @@ $routes->group('admin', function($page){
 		$links->add('hapus/(:num)', 'Admin\Kategori::hapus/$1');
 		$links->add('aksi', 'Admin\Kategori::aksi');
 	});
+	$page->group('menu', function($links){
+		$links->add('/', 'Admin\Menu::index');
+		$links->add('tambah', 'Admin\Menu::formInsert');
+	});
 });
 
 /**

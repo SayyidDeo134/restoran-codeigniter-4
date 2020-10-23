@@ -38,7 +38,7 @@
                         <a class="nav-link" href="<?php echo base_url('admin/kategori') ?>">KATEGORI</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">MENU</a>
+                        <a class="nav-link" href="<?php echo base_url('admin/menu') ?>">MENU</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">PELANGGAN</a>
