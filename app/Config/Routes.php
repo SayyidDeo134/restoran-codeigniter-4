@@ -33,9 +33,11 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 
 $routes->add('login-admin', 'Auth::viewLoginAdmin');
+$routes->add('login', 'Auth::login');
 
-$routes->group('admin', function($page){
+$routes->group('admin',['filter' => 'adminlogin'], function($page){
 	$page->add('/', 'Admin\Dashboard::index');
+	$page->add('logout', 'Auth::adminLogout');
 	$page->group('kategori', function($links){
 		$links->add('/', 'Admin\Kategori::index');
 		$links->add('tambah', 'Admin\Kategori::formInsert');
@@ -49,6 +51,14 @@ $routes->group('admin', function($page){
 		$links->add('edit/(:num)', 'Admin\Menu::formUpdate/$1');
 		$links->add('hapus/(:num)', 'Admin\Menu::hapus/$1');
 		$links->add('aksi', 'Admin\Menu::aksi');
+	});
+	$page->group('user', function($links){
+		$links->add('/', 'Admin\User::index');
+		$links->add('tambah', 'Admin\User::formInsert');
+		$links->add('ubah-password', 'Admin\User::formUbahPassword');
+		$links->add('aksi', 'Admin\User::aksi');
+		$links->add('status/(:num)/(:num)', 'Admin\User::ubahStatus/$1/$2');
+		$links->add('hapus/(:num)/(:num)', 'Admin\User::hapus/$1/$2');
 	});
 });
 

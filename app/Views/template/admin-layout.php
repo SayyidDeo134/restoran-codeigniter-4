@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css') ?>">
 </head>
 <body>
-    
+    <?php $whosLogin = session()->get('administrator') ?>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -20,7 +20,10 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto ">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Log Out</a>
+                                <a class="nav-link" href="<?php echo base_url('admin/user/ubah-password') ?>" > <?php echo $whosLogin['username'] . ' | ' . $whosLogin['level'] ?> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo base_url('admin/logout') ?>">Log Out</a>
                             </li>
                         </ul>
                     </div>
@@ -50,7 +53,7 @@
                         <a class="nav-link" href="#">ORDER DETAIL</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">USER</a>
+                        <a class="nav-link" href="<?php echo base_url('admin/user') ?>">USER</a>
                     </li>
                 </ul>
             </div>

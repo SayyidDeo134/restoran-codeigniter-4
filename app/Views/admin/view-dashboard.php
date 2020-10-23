@@ -1,6 +1,6 @@
 <?php echo $this->extend('template/admin-layout') ?>
 <?php echo $this->section('content') ?>
 
-<h1>SELAMAT DATANG ADMIN</h1>
+<h1 class="text-uppercase" >SELAMAT DATANG  <?php echo session()->get('administrator')['username'] ?> </h1>
 
 <?php echo $this->endSection() ?>
