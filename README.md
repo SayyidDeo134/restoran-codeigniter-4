@@ -91,3 +91,63 @@ Video 30 : Aplikasi Restoran CI 4 - Coding update menu
     
 Video 31 : Aplikasi Restoran CI 4 - Validation
     =>  Berhasil dan bisa dalam penggunaan validation
+
+Video 32 : Aplikasi Restoran CI 4 - Select pelanggan
+    =>  Berhasil dan bisa membuat menu select pelanggan
+
+Video 33 : Aplikasi Restoran CI 4 - Delete Update
+    =>  Berhasil dan bisa membuat fungsi delete update
+
+Video 34 : Aplikasi Restoran CI 4 - Query Builder
+    =>  Berhasil dan bisa dalam penggunaan query builder class
+
+Video 35 : Aplikasi Restoran CI 4 - SQL SELECT
+    =>  Berhasil dan bisa dalam select data menggunakan query
+
+Video 36 : Aplikasi Restoran CI 4 - Paging
+    =>  Belum bisa dan kurang paham dalam pembuatan paging dengan query builder
+
+Video 37 : Aplikasi Restoran CI 4 - Pembayaran Order
+    =>  Berhasil dan bisa dalam pembuatan menu pembayaran order
+
+Video 38 : Aplikasi Restoran CI 4 - Pembayaran Order Detail
+    =>  Berhasil dan bisa dalam pembuatan menu pembayaran order detail
+
+Video 39 : Aplikasi Restoran CI 4 - Update table order
+    =>  Berhasil dan bisa dalam pembuatan fungsi menu update pada table order
+
+Video 40 : Aplikasi Restoran CI 4 - Coding order detail
+    =>  Berhasil dan bisa dalam pembuatan menu order detail
+
+Video 41 : Aplikasi Restoran CI 4 - Pencarian Order Detail
+    =>  Berhasil dan bisa dalam pembuatan fungsi filter date
+
+Video 42 : Aplikasi Restoran CI 4 - Select user
+    =>  Berhasil dan bisa dalam pembuatan menu user selecting
+
+Video 43 : Aplikasi Restoran CI 4 - Insert user
+    =>  Berhasil dan bisa dalam pembuatan menu insert user
+
+Video 44 : Aplikasi Restoran CI 4 - Delete user
+    =>  Berhasil dan bisa dalam pembuatan fungsi delete user
+
+Video 45 : Aplikasi Restoran CI 4 - Validation
+    =>  Berhasil dan bisa dalam pembuatan validation
+
+Video 46 : Aplikasi Restoran CI 4 - Update user
+    =>  Berhasil dan bisa dalam pembuatan menu fungsi update user
+
+Video 47 : Aplikasi Restoran CI 4 - View login admin
+    =>  Berhasil dan bisa dalam pembuatan tampilan login admin
+
+Video 48 : Aplikasi Restoran CI 4 - Mengatur View dan link
+    =>  Berhasil dan bisa dalam mengatur view dan link
+
+Video 49 : Aplikasi Restoran CI 4 - Menggunakan Filter
+    =>  Mengerti dan bisa dalam pembuatan filter
+
+Video 50 : Aplikasi Restoran CI 4 - Mengatur routes
+    =>  Berhasil dan bisa dalam pembuatan routes link
+
+Video 51 : Aplikasi Restoran CI 4 - Mengatur Hak akses dan verifikasi password
+    =>  Berhasil dan bisa dalam pengaturan hak akses dan verifikasi password

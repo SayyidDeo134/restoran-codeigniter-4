@@ -11,6 +11,12 @@ if (isset($_GET['page_page'])) {
     $no = 1;
 }
 
+if(isset($_GET['idkategori'])){
+    $selected = $_GET['idkategori'];
+}else{
+    $selected = '';
+}
+
 ?>
 
 <h3>MENU</h3>
@@ -19,11 +25,11 @@ if (isset($_GET['page_page'])) {
 
 <a href="<?php echo base_url('admin/menu/tambah') ?>" class="btn btn-sm btn-primary my-3 "> TAMBAH DATA </a>
 
-<form action="" method="get">
+<form action="<?php echo base_url('admin/menu') ?>" method="get">
     <div class="form-group">
-        <select name="kategori" class="form-control">
+        <select name="idkategori" onchange="this.form.submit()" class="form-control">
             <?php foreach($kategori as $key): ?>
-            <option value="<?php echo $key['idkategori'] ?>"><?php echo $key['kategori'] ?></option>
+            <option <?php echo $key['idkategori'] == $selected ? 'selected' : ''; ?> value="<?php echo $key['idkategori'] ?>"><?php echo $key['kategori'] ?></option>
             <?php endforeach; ?>
         </select>
     </div>
@@ -44,7 +50,7 @@ if (isset($_GET['page_page'])) {
         <tr>
             <td> <?php echo $no++ ?> </td>
             <td> <?php echo $key['menu'] ?> </td>
-            <td> <img src="<?php echo $key['menu'] ?>" alt="gambar"> </td>
+            <td> <img src="<?php echo base_url('uploads/menu/' . $key['gambar']) ?>" style="width: 100px;" alt="gambar"> </td>
             <td> <?php echo number_format($key['harga'], '0', ',', '.') ?> </td>
             <td>
                 <a href="<?php echo base_url('admin/menu/edit/' . $key['idmenu'] ) ?>" class="btn btn-sm btn-secondary"> UPDATE </a>

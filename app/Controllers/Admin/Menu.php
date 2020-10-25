@@ -15,10 +15,17 @@
         }
 
         public function index(){
+            $menu = $this->table->paginate(2, 'page');
+            if(isset($_GET['idkategori'])){
+                $idkategori = $_GET['idkategori'];
+                $menu = $this->table->where('idkategori', $idkategori)->paginate(2, 'page');
+            }
+            $pager = $this->table->pager;
+            
             $data = [
                 'title'         =>  'ADMIN | MENU',
-                'menu'          =>  $this->table->paginate(2,'page'),
-                'pager'         =>  $this->table->pager,
+                'menu'          =>  $menu,
+                'pager'         =>  $pager,
                 'kategori'      =>  $this->tblkategori->get()->getResultArray()
             ];
             return view('admin/menu/view-data', $data);
