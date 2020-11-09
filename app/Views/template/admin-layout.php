@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Sayyid Deo Amirul Mukmin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> <?php echo $title; ?> </title>
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css') ?>">
+    <title><?php echo $title ?></title>
+    <meta name="description" content="Aplikasi restauran sederhana, dimana memudahkan pembeli dan pihak restauran untuk berkomunikasi">
+    <link rel="shortcut icon" href="<?php echo base_url() ?>/public/images/favicon.png">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/public/assets/css/dashlite.css?ver=1.9.2">
+    <link id="skin-default" rel="stylesheet" href="<?php echo base_url() ?>/public/assets/css/theme.css?ver=1.9.2">
 </head>
 <body>
     <?php $whosLogin = session()->get('administrator'); $level = $whosLogin['level']; ?>
@@ -85,7 +89,7 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
+    <script src="<?php echo base_url() ?>/public/assets/js/bundle.js?ver=1.9.2"></script>
+    <script src="<?php echo base_url() ?>/public/assets/js/scripts.js?ver=1.9.2"></script>
 </body>
 </html>

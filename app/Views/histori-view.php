@@ -19,7 +19,7 @@ if (isset($_GET['page_page'])) {
 
 <div class="row">
     <div class="col-6">
-        <form action="<?php echo base_url('admin/orderdetail') ?>" method="post">
+        <form action="<?php echo base_url('histori-pesan') ?>" method="post">
             <div class="form-group" ata-provide="datepicker">
                 <label for="">Tanggal Mulai</label>
                 <input type="date" name="tanggal-mulai" id="tanggal-mulai" class="form-control">
