@@ -151,3 +151,7 @@ Video 50 : Aplikasi Restoran CI 4 - Mengatur routes
 
 Video 51 : Aplikasi Restoran CI 4 - Mengatur Hak akses dan verifikasi password
     =>  Berhasil dan bisa dalam pengaturan hak akses dan verifikasi password
+
+
+Admin : administrator.Administrator001@gmail.com
+password : administrator
