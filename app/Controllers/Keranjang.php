@@ -1,7 +1,7 @@
 <?php namespace App\Controllers;
 
     use CodeIgniter\I18n\Time;
-    use Wildanfuady\WFcart\WFcart;
+    use App\Libraries\WFcart;
 
     class Keranjang extends BaseController{
 
