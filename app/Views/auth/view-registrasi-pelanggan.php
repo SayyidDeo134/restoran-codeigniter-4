@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REGISTRASI PELANGGAN</title>
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css') ?>">
+    <link rel="shortcut icon" href="<?php echo base_url() ?>/public/images/favicon.png">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/public/assets/css/dashlite.css?ver=1.9.2">
+    <link id="skin-default" rel="stylesheet" href="<?php echo base_url() ?>/public/assets/css/theme.css?ver=1.9.2">
 </head>
 <body>
 
@@ -66,7 +68,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="submit" value="DAFTAR" name="regist-pelanggan" class=" col-12 btn btn btn-primary">
+                            <input type="submit" value="DAFTAR" name="regist-pelanggan" class=" mt-2 col-12 btn btn btn-primary">
                         </div>
                     </div>
                 </form>
@@ -74,6 +76,7 @@
         </div>
     </div>
 
-    <script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
+    <script src="<?php echo base_url() ?>/public/assets/js/bundle.js?ver=1.9.2"></script>
+    <script src="<?php echo base_url() ?>/public/assets/js/scripts.js?ver=1.9.2"></script>
 </body>
 </html>
